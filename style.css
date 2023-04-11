@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    width: 1440px;
+    height: 1024px;
+    background-color: #F3F5FC;
+    margin: 0 auto;
+    position: relative;
+}
+
+ .header img{
+    width: 32px;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+
+.conteudo textarea{
+    position: absolute;
+    left: 240px;
+    top: 168px;
+    width: 680px;
+    height: 288px;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    color: #0A3871;
+    line-height: 150%;
+}
+
+.conteudo textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+    line-height: 48px;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.resultado img{
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+.resultado h2{
+    font-size: 24px;
+    color: #343440;
+    line-height: 28px;
+    padding: 0 32px;
+    text-align: center;
+}
+
+.resultado p{
+    font-weight: 400;
+    color: #495057;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 32px;
+}
+
+.botoes p{
+    position: absolute;
+    top: 851px;
+    left: 264px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+    opacity: 80%;
+}
+
+.botoes img{
+    position: absolute;
+    top: 851px;
+    left: 240px;
+    color: #495057;
+    opacity: 80%;
+}
+
+.botoes .criptografar{
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    background: #0A3871;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: all .5s;
+
+}
+
+.botoes .criptografar:hover{
+    background: #343440;
+    color: #fff;
+}
+
+.botoes .descriptografar{
+    color: #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    top: 885px;
+    left: 592px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.botoes .descriptografar:hover{
+    background: #343440;
+    color: #fff;
+}
+
+.footer h3{
+    position: absolute;
+    width: 100%;
+    top: 985px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 32px;
+    background-color: #0A3871;;
+}
