@@ -13,12 +13,14 @@
     position: relative;
 }
 
+/* LOGO DA ALURA */
  .header img{
     width: 32px;
     margin-top: 40px;
     margin-left: 84px;
 }
 
+/* ÁREA DE INSERÇÃO DO TEXTO */
 .conteudo textarea{
     position: absolute;
     left: 240px;
@@ -39,8 +41,10 @@
     line-height: 48px;
 }
 
+
+/* RESULTADO DA CRIPTOGRAFIA */
 .resultado{
-    display: flex;
+    display: flex;                                           
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -78,6 +82,7 @@
     padding: 0 32px;
 }
 
+/* BOTÕES */
 .botoes p{
     position: absolute;
     top: 851px;
@@ -96,21 +101,28 @@
     opacity: 80%;
 }
 
-.botoes .criptografar{
-    color: #fff;
+.btn{
+    width: 328px;
     font-size: 16px;
     line-height: 19px;
     position: absolute;
     top: 885px;
-    left: 240px;
-    width: 328px;
     height: 67px;
     padding: 24px;
-    background: #0A3871;
     cursor: pointer;
     border-radius: 24px;
     transition: all .5s;
+}
 
+.copiar{
+    top: 845px;
+}
+
+.botoes .criptografar{
+    color: #fff;
+    left: 240px;
+    padding: 24px;
+    background: #0A3871;
 }
 
 .botoes .criptografar:hover{
@@ -120,18 +132,9 @@
 
 .botoes .descriptografar{
     color: #0A3871;
-    font-size: 16px;
-    line-height: 19px;
-    position: absolute;
-    top: 885px;
     left: 592px;
-    width: 328px;
     height: 67px;
-    padding: 24px;
     background: #D8DFE8;
-    border-radius: 24px;
-    cursor: pointer;
-    transition: all .5s;
 }
 
 .botoes .descriptografar:hover{
@@ -139,6 +142,7 @@
     color: #fff;
 }
 
+/* FOOTER */
 .footer h3{
     position: absolute;
     width: 100%;
@@ -149,4 +153,111 @@
     text-align: center;
     padding: 10px 32px;
     background-color: #0A3871;;
+}
+
+
+/* MEDIA PARA TABLET */
+@media screen and (max-width: 768px){
+    .container{
+        width: 768px;
+        height: 1174px;
+    }
+    .conteudo textarea{
+        left: 40px;
+    }
+
+    .resultado{
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 1001px;
+    }
+
+    .resultado img, .copiar{
+        display: none;
+    }
+
+    .botoes img{
+        top: 837px;
+        left: 40px;
+    }
+
+    .botoes p{
+        top: 836px;
+        left: 64px;
+    }
+
+    
+    .btn{
+        top: 870px;
+    }
+    .botoes .criptografar{
+        left: 40px;
+    }
+    
+    .botoes .descriptografar{
+        left: 396px;
+    }
+    
+    .footer h3{
+        top: 1170px;
+    }
+    
+}
+
+/* MEDIA PARA CELULAR */
+
+@media screen and (max-width: 375px){
+    .container{
+        width: 375px;
+        height: 933px;
+    }
+
+    .header img{
+        width: 32px;
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+    .conteudo textarea{
+        width: 343px;
+        left: 16px;
+    }
+
+    .resultado{
+        width:327px;
+        height: 168px;
+        left: 24px;
+        top: 707px;
+    }
+
+    .resultado img, .copiar{
+        display: none;
+    }
+
+    .botoes img{
+        top: 452px;
+        left: 16px;
+    }
+
+    .botoes p{
+        top: 452px;
+        left: 40px;
+    }
+
+    .btn{
+        top: 485px;
+    }
+    .botoes .criptografar{
+        left: 16px;
+    }
+    
+    .botoes .descriptografar{
+        top: 576px;
+        left: 16px;
+    }
+    
+    .footer h3{
+        top: 930px;
+        font-size: 12px;
+    }
 }
