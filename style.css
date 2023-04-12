@@ -32,6 +32,7 @@
     font-size: 32px;
     color: #0A3871;
     line-height: 150%;
+    text-transform: lowercase;
 }
 
 .conteudo textarea::placeholder{
@@ -59,6 +60,27 @@
     border-radius: 32px;
 }
 
+.resultado-tela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.resposta{
+    display: none;
+    border: none;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    width: 336px;
+    height: 781px;
+    background: transparent;
+    text-transform: lowercase;
+}
+
+
 .resultado img{
     width: 336px;
     height: 304px;
@@ -81,6 +103,8 @@
     text-align: center;
     padding: 0 32px;
 }
+
+
 
 /* BOTÕES */
 .botoes p{
@@ -116,6 +140,8 @@
 
 .copiar{
     top: 845px;
+    left: 32px;
+    display: none;
 }
 
 .botoes .criptografar{
@@ -155,6 +181,13 @@
     background-color: #0A3871;;
 }
 
+.sumir{
+    display: none;
+}
+
+.aparecer{
+    display: block;
+}
 
 /* MEDIA PARA TABLET */
 @media screen and (max-width: 768px){

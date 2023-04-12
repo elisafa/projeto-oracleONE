@@ -20,25 +20,39 @@
       </header>
 
       <div class="conteudo">
-        <textarea placeholder="Digite seu texto"></textarea>
-        <!-- <input type="text" placeholder="Digite seu texto" /> -->
+        <textarea placeholder="Digite seu texto" autofocus></textarea>
       </div>
 
       <div class="resultado">
-        <img src="./images/menino.png" alt="Menino" />
-        <h2>Nenhuma mensagem encontrada</h2>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <textarea class="resposta"></textarea>
         <input class="copiar btn" type="button" value="Copiar" />
+
+        <div class="resultado-tela">
+          <img src="./images/menino.png" alt="Menino" />
+          <h2 class="texto-criptrografado">Nenhuma mensagem encontrada</h2>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+          
+        </div>
       </div>
+
+
       <div class="botoes">
         <img src="./images/exclamacao.png" alt="" />
         <p>Apenas letras minúsculas e sem acento</p>
         <input class="criptografar btn" type="button" value="Criptografar" />
-        <input class="descriptografar btn" type="button" value="Descriptografar" />
+        <input
+          class="descriptografar btn"
+          type="button"
+          value="Descriptografar"
+        />
       </div>
       <footer class="footer">
         <h3>Desenvolvedor: Elisafá Junior - turma 5 - Oracle ONE</h3>
       </footer>
+
+      <script src="./main.js"></script>
     </section>
   </body>
 </html>
