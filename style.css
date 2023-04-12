@@ -32,7 +32,7 @@
     font-size: 32px;
     color: #0A3871;
     line-height: 150%;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 }
 
 .conteudo textarea::placeholder{
